@@ -1,0 +1,25 @@
+node {
+
+  stage ('git checkout') {
+        git branch: 'main' ; url: ''
+  
+  }
+
+  stage ('change directory'){
+
+  }
+
+  stage ('tf init') {
+
+  }
+
+  stage ('tf plan') {
+
+  }
+
+  stage ('tf apply') {
+
+  }
+
+
+}
