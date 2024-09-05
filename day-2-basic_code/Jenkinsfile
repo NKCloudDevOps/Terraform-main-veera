@@ -12,12 +12,14 @@ node {
 }
 
   stage ('tf plan') {
+        dir('day-2-basic_code'){
         sh 'terraform plan'
   }
-
+  }
   stage ('tf apply') {
+        dir('day-2-basic_code'){
         sh 'terraform apply -auto-approve'
   }
-
+  }
 
 }
