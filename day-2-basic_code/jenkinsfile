@@ -1,24 +1,24 @@
 node {
 
   stage ('git checkout') {
-        git branch: 'main' ; url: ''
+        git branch: 'main' ; url: 'https://github.com/NKCloudDevOps/Terraform-main-veera.git'
   
   }
 
   stage ('change directory'){
-
+        dir('day-2-basic_code')
   }
 
   stage ('tf init') {
-
+        sh 'terraform init'
   }
 
   stage ('tf plan') {
-
+        sh 'terraform plan'
   }
 
   stage ('tf apply') {
-
+        sh 'terraform apply -auto-approve'
   }
 
 
