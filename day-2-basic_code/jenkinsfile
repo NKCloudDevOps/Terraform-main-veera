@@ -5,13 +5,10 @@ node {
   
   }
 
-  stage ('change directory'){
+  stage ('tf init'){
         dir('day-2-basic_code')
-  }
-
-  stage ('tf init') {
         sh 'terraform init'
-  }
+ }
 
   stage ('tf plan') {
         sh 'terraform plan'
