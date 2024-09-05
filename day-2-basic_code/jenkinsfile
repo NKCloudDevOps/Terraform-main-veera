@@ -1,7 +1,7 @@
 node {
 
   stage ('git checkout') {
-        git branch: 'main' ; url: 'https://github.com/NKCloudDevOps/Terraform-main-veera.git'
+        git branch: 'main', url: 'https://github.com/NKCloudDevOps/Terraform-main-veera.git'
   
   }
 
