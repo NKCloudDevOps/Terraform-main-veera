@@ -18,7 +18,7 @@ node {
   }
   stage ('tf apply and destroy') {
         dir('day-2-basic_code'){
-        sh 'terraform apply -auto-approve'
+        sh 'terraform destroy -auto-approve'
   }
   }
 
