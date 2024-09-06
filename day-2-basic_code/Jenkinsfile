@@ -16,7 +16,7 @@ node {
         sh 'terraform plan'
   }
   }
-  stage ('tf apply and destroy') {
+  stage ('tf apply') {
         dir('day-2-basic_code'){
         sh 'terraform destroy -auto-approve'
   }
